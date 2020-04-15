@@ -18,12 +18,13 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"syscall"
+
+	xo "github.com/hyperledger/sawtooth-sdk-go/examples/xo_go/src/sawtooth_xo/handler"
 	"github.com/hyperledger/sawtooth-sdk-go/logging"
 	"github.com/hyperledger/sawtooth-sdk-go/processor"
 	flags "github.com/jessevdk/go-flags"
-	"os"
-	xo "sawtooth_xo/handler"
-	"syscall"
 )
 
 type Opts struct {

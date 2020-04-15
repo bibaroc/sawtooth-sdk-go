@@ -19,17 +19,18 @@ package processor
 
 import (
 	"fmt"
+	"os"
+	"os/signal"
+	"runtime"
+	"time"
+
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/sawtooth-sdk-go/logging"
 	"github.com/hyperledger/sawtooth-sdk-go/messaging"
+	"github.com/hyperledger/sawtooth-sdk-go/protobuf/network_pb2"
+	"github.com/hyperledger/sawtooth-sdk-go/protobuf/processor_pb2"
+	"github.com/hyperledger/sawtooth-sdk-go/protobuf/validator_pb2"
 	zmq "github.com/pebbe/zmq4"
-	"os"
-	"os/signal"
-	"protobuf/network_pb2"
-	"protobuf/processor_pb2"
-	"protobuf/validator_pb2"
-	"runtime"
-	"time"
 )
 
 var logger *logging.Logger = logging.Get()

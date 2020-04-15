@@ -23,18 +23,19 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	cbor "github.com/brianolson/cbor_go"
-	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/sawtooth-sdk-go/signing"
-	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"math/rand"
 	"net/http"
-	"protobuf/batch_pb2"
-	"protobuf/transaction_pb2"
 	"strconv"
 	"strings"
 	"time"
+
+	cbor "github.com/brianolson/cbor_go"
+	"github.com/golang/protobuf/proto"
+	"github.com/hyperledger/sawtooth-sdk-go/protobuf/batch_pb2"
+	"github.com/hyperledger/sawtooth-sdk-go/protobuf/transaction_pb2"
+	"github.com/hyperledger/sawtooth-sdk-go/signing"
+	"gopkg.in/yaml.v2"
 )
 
 type IntkeyClient struct {

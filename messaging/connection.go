@@ -21,11 +21,13 @@ package messaging
 
 import (
 	"fmt"
+
+	"github.com/hyperledger/sawtooth-sdk-go/protobuf/validator_pb2"
+
+	uuid "github.com/gofrs/uuid"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/sawtooth-sdk-go/logging"
 	zmq "github.com/pebbe/zmq4"
-	uuid "github.com/satori/go.uuid"
-	"protobuf/validator_pb2"
 )
 
 var logger *logging.Logger = logging.Get()

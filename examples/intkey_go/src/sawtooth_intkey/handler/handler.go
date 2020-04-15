@@ -21,11 +21,12 @@ import (
 	"crypto/sha512"
 	"encoding/hex"
 	"fmt"
+	"strings"
+
 	cbor "github.com/brianolson/cbor_go"
 	"github.com/hyperledger/sawtooth-sdk-go/logging"
 	"github.com/hyperledger/sawtooth-sdk-go/processor"
-	"protobuf/processor_pb2"
-	"strings"
+	"github.com/hyperledger/sawtooth-sdk-go/protobuf/processor_pb2"
 )
 
 var logger *logging.Logger = logging.Get()

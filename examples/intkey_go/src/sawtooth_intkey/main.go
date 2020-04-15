@@ -19,12 +19,13 @@ package main
 
 import (
 	"fmt"
+	"os"
+	intkey "github.com/hyperledger/sawtooth-sdk-go/examples/intkey_go/src/sawtooth_intkey/handler"
+	"syscall"
+
 	"github.com/hyperledger/sawtooth-sdk-go/logging"
 	"github.com/hyperledger/sawtooth-sdk-go/processor"
 	flags "github.com/jessevdk/go-flags"
-	"os"
-	intkey "sawtooth_intkey/handler"
-	"syscall"
 )
 
 type Opts struct {

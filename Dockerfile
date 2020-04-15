@@ -66,7 +66,7 @@ RUN go get -u \
     github.com/golang/mock/gomock \
     github.com/golang/mock/mockgen \
     github.com/pebbe/zmq4 \
-    github.com/satori/go.uuid
+    github.com/gofrs/uuid
 
 RUN mkdir -p /go/src/github.com/hyperledger/sawtooth-sdk-go
 
